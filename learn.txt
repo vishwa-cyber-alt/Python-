@@ -1,0 +1,61 @@
+application = "OrderService"
+status_code = 500
+response_time = 2.75
+is_running = False
+error_message = None
+
+print(type(application))
+print(type(status_code))
+print(type(response_time))
+print(type(is_running))
+print(type(error_message))
+
+
+status_code = 500
+
+if status_code == 500:
+    print("Investigate the server-side error")
+else:
+    print("Check the response")
+
+message = "ERROR"
+
+print(message[0])
+print(message[1])
+print(message[-1])
+
+message = "Database connection failed"
+
+print(message[0:8])
+print(message[9:19])
+print(message[-6:])
+
+status = "error"
+
+print(status.upper())
+print(status.lower())
+print(status.capitalize())
+
+log = "2026-10-24 ERROR Database connection failed"
+
+if "ERROR" in log:
+    print("Error detected")
+
+server = "  SERVER01  "
+
+print(server.strip())
+print(server.lower())
+print(server.replace("SERVER", "APP"))
+
+log = "10:30:00,ERROR,Database failed"
+
+parts = log.split(",")
+
+print(parts)
+print(parts[0])
+print(parts[1])
+print(parts[2])
+
+message = "error error warning error"
+
+print(message.count("error"))
