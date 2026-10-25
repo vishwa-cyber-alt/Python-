@@ -59,3 +59,42 @@ print(parts[2])
 message = "error error warning error"
 
 print(message.count("error"))
+
+# a=["bmw","ferrari","bugatti"]
+# print(a)
+# print(a[0])
+# print(a[-1])
+# print(len(a))
+# a[1]="lambo"
+# print(a)
+# a.insert(2,"tata")
+# print(a)
+
+# b=[1,2,4,3,2]
+# b.extend([9,10])
+# print(b)
+# b.remove(2)
+# print(b)
+# b.pop()
+# print(b)
+# del b[2]
+# print(b)
+
+
+# c=[1,2,4,3,2]
+# print(c.count(3))
+# countans=c.count(1)
+# print(countans)
+# sortans=c.sort()
+# print(sortans)
+
+
+c=[1,2,4,3,2]
+# c.sort()
+print(c)
+print(c.index(4))
+print(c.index(2))
+# c.reverse()
+# print(c)
+c.sort(reverse=True)
+print(c)
