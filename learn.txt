@@ -98,3 +98,133 @@ print(c.index(2))
 # print(c)
 c.sort(reverse=True)
 print(c)
+
+
+user={
+    "id":1,
+    "name":"Murugan",
+    "age":"50",
+    "designation":"god"
+}
+print(user)
+print(user["age"])
+print(user["name"])
+print(user.get("id"))
+print(user.get("designation"))
+
+user={
+    "id":1,
+    "name":"Murugan",
+    "age":"50",
+    "designation":"god"
+}
+print(user)
+print(user["age"])
+print(user["name"])
+print(user.get("id"))
+print(user.get("designation"))
+
+user["salary"]=50000
+print(user)
+user["age"]=60
+print(user)
+user["name"]="Muruga Peruman"
+print(user)
+user.pop("salary")
+print(user)
+user.clear()
+print("final",user)
+
+
+
+# user={
+#     "id":1,
+#     "name":"Murugan",
+#     "age":"50",
+#     "designation":"god"
+# }
+# print(user)
+# print(user["age"])
+# print(user["name"])
+# print(user.get("id"))
+# print(user.get("designation"))
+
+# user["salary"]=50000
+# print(user)
+# user["age"]=60
+# print(user)
+# user["name"]="Muruga Peruman"
+# print(user)
+# user.pop("salary")
+# print(user)
+# print("final",user)
+# print(len(user))
+# print(type(user))
+# del user["age"];
+# print(user)
+
+server = {
+    "name": "Server1",
+    "status": "Running",
+    "cpu": 75
+}
+
+print(server.keys())
+
+print(server.values())
+
+print(server.items())
+server.update({"cpu":85,"status":"Active"})
+print(server)
+print(server["status"])
+print(server["cpu"])
+server.update({"uptime":"yes"})
+print(server)
+for i in server.values():
+    print(i)
+    
+for i in server.keys():
+    print(i)
+    
+for i in server.items():
+    print(i)
+for key,value in server.items():
+    print(key,":",value)
+
+emp={
+    "id":1,
+    "name":"Ganesh"
+}
+print(emp)
+emp.update({"id":2,"name":"swamy"})
+print(emp.keys())
+print(emp)
+
+print("1 - Celsius\n2 - Fah")
+temp=int(input("Enter Option : "))
+if temp==1:
+    Celsius=int(input("Enter Celsius:"))
+    cv=(Celsius*1.8)+32
+    print("Fah : ",cv)
+elif temp==2:
+    Fah=int(input("Enter Fah:"))
+    fv=(Fah-32)*0.55
+    print("Celsius : ",fv)
+else:
+    print("Invalid Option")
+
+# 1. The original text
+text = "Pyt*hon is* a*wesome*"
+n="*"
+# 2. Remove all asterisks (*)
+clean_text = text.replace(n, "")
+
+# 3. Print the result
+print(clean_text)
+
+# import string
+# text = "abcd"
+# target = "bd"
+# for i in target:
+#     text = text.replace(i, "")
+# print(text)
