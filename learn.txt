@@ -228,3 +228,24 @@ print(clean_text)
 # for i in target:
 #     text = text.replace(i, "")
 # print(text)
+
+word_count = {"name":2,"age":40}
+word_count["age"] += 1
+val=word_count.values()
+for i in val:
+    if i%2==0:
+        print("yes")
+        break
+    else:
+        print("no")
+        break
+
+word_count = {"name": 2, "age": 40}
+word_count["age"] += 1 
+for i in word_count:
+    if word_count[i] % 2 == 0:
+        print("yes")
+        word_count[i] += 1  
+    else:
+        print("no")
+print(word_count)
