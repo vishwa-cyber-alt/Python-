@@ -249,3 +249,86 @@ for i in word_count:
     else:
         print("no")
 print(word_count)
+
+input="thanks god"
+remove_spaces=input.replace(" ","")
+change_to_upper=remove_spaces.upper()
+create_list=list(change_to_upper)
+print(create_list)
+
+#output=['T', 'H', 'A', 'N', 'K', 'S', 'G', 'O', 'D']
+
+input=[1,10,20,21,24,40,4,19,18]
+for i in input:
+  if i>20:
+    print(i)
+  
+#out=print >20
+
+input=['a','b','e','i']
+vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+for i in input:
+  if i in vowels:
+    print(i)
+
+input=[1,0,2,0,3]
+if 0 in input:
+  print("yes zero is present")
+else:
+  print("No zero is not present")
+
+#move 0 to end
+input=[1,0,2,0,3]
+zero=[]
+nonzero=[]
+final=[]
+for i in input:
+  if i==0:
+    zero.append(i)
+  else:
+    nonzero.append(i)
+final=nonzero+zero
+print(final)
+
+names = ["Alice", "Bob", "Alice", "Charlie", "Bob", "David"]
+remove_dup=set(names)
+print(remove_dup)
+print(sorted(remove_dup))
+
+a={1,2,3}
+print(type(a))
+
+a={1,2,3}
+a.add(4)
+a.add(5)
+print(a)
+a.update([8,9,10])
+print(a)
+
+input=[1,2,3,4,2,3]
+seen=set()
+duplicates=set()
+for i in input:
+    if i in seen:
+        duplicates.add(i)
+    else:
+        seen.add(i)
+print(duplicates)
+
+input=[1,2,3,4]
+new_set=()
+new_set=len(set(input))!=len(input)
+print(new_set)
+
+a = {1, 2, 3, 4}
+b = {3, 4, 5, 6}
+c=a|b
+print(c)
+
+a = [1, 2, 4]
+b = [4, 5, 6]
+out=[]
+for i in range(len(a)):
+    dif=b[i]-a[i]
+    out.append(dif)
+print(out)
