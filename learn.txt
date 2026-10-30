@@ -385,3 +385,28 @@ for i in range(len(a) - 1):
     if a[i+1] - a[i] > 1:
         print(a[i] + 1)
         break
+
+
+inventory = {
+    "laptop": 50000,
+    "mobile": 20000,
+    "keyboard": 1500,
+    "mouse": 500,
+    "monitor": 12000
+}
+
+product = input("Enter product name: ").lower()
+
+if product in inventory:
+    print("Product price:", inventory[product])
+else:
+    print("Product not found")
+
+a=['a','b','a']
+print(a.count('a'))
+print(a.count('b'))
+# get char count
+
+for i in a:
+    if a.count(i)>1:
+        print(i)
